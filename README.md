@@ -1,13 +1,14 @@
 # Mira
 
-**An Architecture-First, ML-Native World Representation**
+**A Model-Aware, Architecture-Grounded, ML-Native World Representation**
 
 Mira is a framework for building reliable world representations that combine
 classical geometric structure with modern learning-based perception.
 
 Rather than treating machine learning as a monolithic replacement for geometry,
-Mira is **architecture-first**: the system structure, constraints, and failure
-modes are defined explicitly before any learning component is introduced.
+Mira is **model-aware and architecture-grounded**: learning-based components
+drive high-level representation and decision-making, while system structure,
+constraints, and failure modes are defined explicitly to ensure reliability.
 
 ---
 
@@ -29,11 +30,14 @@ Mira is built on a simple premise:
 
 > **A world representation must know when it does not know.**
 
+Mira is designed as a world interface layer between physical reality and
+learning-based models or agents, rather than as a standalone mapping pipeline.
+
 ---
 
 ## Core Philosophy
 
-### Architecture-First Design
+### Architecture-Grounded Design
 
 Mira defines the *system architecture* before defining models.
 
@@ -49,12 +53,13 @@ Learning components are added **within** this structure, not in place of it.
 
 ### Geometry as Hard Physical Constraints
 
-Geometry is treated as non-negotiable structure:
+Geometry is treated as a **non-negotiable reliability layer**:
 - coordinate frames are explicit
 - spatial consistency is enforced
 - violations are detected, not masked
 
-Geometry is not something to be “learned away”.
+Geometry provides a **reliability substrate** that learned representations can
+build upon, rather than compete with.
 
 ---
 
@@ -69,7 +74,8 @@ Learning is used to:
 - make bounded decisions
 
 Learning components are *accountable*: their scope, impact, and failure modes
-are explicitly defined by the system.
+are explicitly defined by the system, enabling learned representations to be
+used confidently in downstream models and agents.
 
 ---
 
@@ -128,9 +134,8 @@ Mira is intentionally **not**:
 - an end-to-end learned world model
 - a NeRF or Gaussian Splatting replacement
 - a SLAM or mapping library drop-in
-- a foundation model for the world
-
-Mira is a **system architecture**, not a single algorithm.
+- a monolithic foundation model, but rather an architecture that enables
+  foundation models to interact with the physical world safely
 
 ---
 
@@ -139,7 +144,8 @@ Mira is a **system architecture**, not a single algorithm.
 - AR and spatial computing localization
 - persistent world mapping
 - learning-augmented geometric pipelines
-- embodied AI systems operating in the physical world
+- embodied AI and agent-based systems where world representations are consumed
+  by downstream models or decision-making policies
 
 ---
 
@@ -159,7 +165,7 @@ Reference implementations will be introduced incrementally.
 
 ## One-Sentence Positioning
 
-> **Mira is an architecture-first world representation that treats geometry as
+> **Mira is an architecture-grounded world representation that treats geometry as
 hard physical structure and learning as an accountable decision-making layer.**
 
 ---
