@@ -161,6 +161,11 @@ The focus is on:
 
 Reference implementations will be introduced incrementally.
 
+### Reference demos
+
+- **proposal-policy-vo**: a runnable educational demo of the proposal → policy → commit pattern for visual odometry  
+  https://github.com/Reality-Vision/proposal-policy-vo
+
 ---
 
 ## One-Sentence Positioning
